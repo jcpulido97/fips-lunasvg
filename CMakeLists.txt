@@ -18,6 +18,8 @@ add_subdirectory(lunasvg/source)
 add_subdirectory(lunasvg/3rdparty/software)
 add_subdirectory(lunasvg/3rdparty/plutovg)
 
+set_property(TARGET lunasvg PROPERTY CXX_STANDARD 17)
+
 if (NOT FIPS_IMPORT)
     fips_finish()
 endif()
